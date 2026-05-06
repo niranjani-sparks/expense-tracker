@@ -15,7 +15,7 @@ import ExpenseList from './components/ExpenseList.vue'
 const expenses = ref([])
 
 async function fetchExpenses() {
-  const res = await axios.get('http://localhost:5000/expenses')
+  const res = await axios.get('await axios.post('https://YOUR-RAILWAY-URL/expenses', {')
   expenses.value = res.data
 }
 

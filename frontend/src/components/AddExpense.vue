@@ -31,7 +31,7 @@ async function submitExpense() {
     alert('Please fill all required fields!')
     return
   }
-  await axios.post('http://localhost:5000/expenses', {
+  await axios.post('await axios.post('https://YOUR-RAILWAY-URL/expenses', {', {
     title: title.value,
     amount: amount.value,
     category: category.value,
