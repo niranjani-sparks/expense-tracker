@@ -15,7 +15,7 @@ import ExpenseList from './components/ExpenseList.vue'
 const expenses = ref([])
 
 async function fetchExpenses() {
-  const res = await axios.get('await axios.post('https://YOUR-RAILWAY-URL/expenses', {')
+  const res = await axios.get('await axios.post('expense-tracker-production-2f0b.up.railway.app', {')
   expenses.value = res.data
 }
 

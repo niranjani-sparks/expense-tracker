@@ -29,7 +29,7 @@ const total = computed(() =>
 )
 
 async function deleteExpense(id) {
-  await axios.delete(`await axios.post('https://YOUR-RAILWAY-URL/expenses'/${id}`))
+  await axios.delete(`await axios.post('expense-tracker-production-2f0b.up.railway.app'/${id}`))
   emit('deleted')
 }
 </script>
