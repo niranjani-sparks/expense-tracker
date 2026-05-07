@@ -4,7 +4,9 @@ const db = require('./db');
 require('dotenv').config();
 
 const app = express();
-app.use(cors());
+app.use(cors({
+  origin: 'https://trackingexpenses000.netlify.app'
+}))
 app.use(express.json());
 
 // GET all expenses
