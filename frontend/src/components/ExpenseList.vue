@@ -50,7 +50,7 @@ function catColor(cat) { return colors[cat] || '#888' }
 function catIcon(cat) { return icons[cat] || '📦' }
 
 async function deleteExp(id) {
-  await axios.delete(`http://localhost:5000/expenses/${id}`)
+  await axios.delete(`https://expense-tracker-production-2f0b.up.railway.app/expenses/${id}`)
   emit('deleted')
 }
 </script>

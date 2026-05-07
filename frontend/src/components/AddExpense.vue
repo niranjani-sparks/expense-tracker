@@ -43,7 +43,7 @@ async function submitExpense() {
     alert('Please fill all fields!')
     return
   }
-  await axios.post('http://localhost:5000/expenses', {
+  await axios.post('https://expense-tracker-production-2f0b.up.railway.app/expenses', {
     title: title.value,
     amount: amount.value,
     category: category.value,

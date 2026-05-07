@@ -43,7 +43,7 @@ import PieChart from './components/PieChart.vue'
 const expenses = ref([])
 
 async function fetchExpenses() {
-  const res = await axios.get('http://localhost:5000/expenses')
+  const res = await axios.get('https://expense-tracker-production-2f0b.up.railway.app/expenses')
   expenses.value = res.data
 }
 
