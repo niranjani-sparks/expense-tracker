@@ -4,10 +4,8 @@ const cors = require('cors');
 const db = require('./db');
 
 const app = express();
+app.use(cors());
 
-app.use(cors({
-  origin: 'https://trackingexpenses000.netlify.app'
-}));
 app.use(express.json());
 
 app.get('/expenses', (req, res) => {
